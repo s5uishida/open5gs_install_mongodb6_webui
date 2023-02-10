@@ -62,7 +62,7 @@ Then, install Open5GS WebUI.
 # cd open5gs/docs/assets/webui
 # bash install
 ```
-If necessary, set the IP address and port to bind as follows (example, `192.168.0.111:3000`).
+If necessary, set the IP address and port to bind as follows (ex. `192.168.0.111:3000`).
 
 `/lib/systemd/system/open5gs-webui.service`
 ```diff
