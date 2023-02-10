@@ -49,6 +49,7 @@
 
 <h2 id="install_webui">Install Open5GS WebUI</h2>
 
+It is assumed that MongoDB 6.0 has been installed in advance.  
 First, install Node.js.
 ```
 # apt install wget
