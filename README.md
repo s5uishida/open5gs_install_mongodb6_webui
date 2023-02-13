@@ -49,7 +49,7 @@ It is assumed that MongoDB 6.0 has been installed already.
 First, install Node.js.
 ```
 # apt install wget
-# wget -qO - https://deb.nodesource.com/setup_18.x | sudo -E bash -
+# wget -qO - https://deb.nodesource.com/setup_18.x | bash -
 # apt install nodejs
 ```
 Then, install Open5GS WebUI.
