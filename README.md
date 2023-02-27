@@ -1,4 +1,5 @@
 # Install MongoDB 6.0 and Open5GS WebUI
+MongoDB 6.0.4 released on 2023.01.26 now supports Ubuntu 22.04.
 
 ---
 
