@@ -1,35 +1,20 @@
 # Install MongoDB 6.0 and Open5GS WebUI
 MongoDB 6.0.4 released on 2023.01.26 now supports Ubuntu 22.04.
+The process for the following OS is shown here.
+
+- Ubuntu 20.04
+- Ubuntu 22.04
 
 ---
 
 <h2 id="toc">Table of Contents</h2>
 
 - [Install MongoDB 6.0](#install_mongodb)
-  - [For Ubuntu 20.04](#ubuntu2004)
-  - [For Ubuntu 22.04](#ubuntu2204)
 - [Install Open5GS WebUI](#install_webui)
 - [Changelog (summary)](#changelog)
 
 ---
 <h2 id="install_mongodb">Install MongoDB 6.0</h2>
-
-<h3 id="ubuntu2004">For Ubuntu 20.04</h3>
-
-```
-# apt update
-# apt install wget gnupg software-properties-common ca-certificates lsb-release
-# wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | apt-key add -
-# echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/6.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-# apt update
-# apt install -y mongodb-org
-```
-```
-# systemctl enable mongod
-# systemctl start mongod
-```
-
-<h3 id="ubuntu2204">For Ubuntu 22.04</h3>
 
 ```
 # apt update
