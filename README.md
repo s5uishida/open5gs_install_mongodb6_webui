@@ -32,11 +32,14 @@ The process for the following OS is shown here.
 <h2 id="install_webui">Install Open5GS WebUI</h2>
 
 It is assumed that MongoDB 6.0 has been installed already.  
-First, install Node.js.
+First, install Node.js, see [here](https://github.com/nodesource/distributions).
 ```
-# apt install wget
-# wget -qO - https://deb.nodesource.com/setup_18.x | bash -
-# apt install nodejs
+# apt install -y ca-certificates curl gnupg
+# mkdir -p /etc/apt/keyrings
+# curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+# echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_18.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
+# apt update
+# apt install -y nodejs
 ```
 Then, install Open5GS WebUI.
 ```
@@ -68,4 +71,5 @@ Update system services.
 ---
 <h2 id="changelog">Changelog (summary)</h2>
 
+- [2023.09.02] Updated the Node.js installation procedure.
 - [2023.02.10] Initial release.
