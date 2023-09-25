@@ -7,14 +7,18 @@ The process for the following OS is shown here.
 
 ---
 
-<h2 id="toc">Table of Contents</h2>
+<a id="toc"></a>
+
+## Table of Contents
 
 - [Install MongoDB 6.0](#install_mongodb)
 - [Install Open5GS WebUI](#install_webui)
 - [Changelog (summary)](#changelog)
 
 ---
-<h2 id="install_mongodb">Install MongoDB 6.0</h2>
+<a id="install_mongodb"></a>
+
+## Install MongoDB 6.0
 
 ```
 # apt update
@@ -29,7 +33,9 @@ The process for the following OS is shown here.
 # systemctl start mongod
 ```
 
-<h2 id="install_webui">Install Open5GS WebUI</h2>
+<a id="install_webui"></a>
+
+## Install Open5GS WebUI
 
 It is assumed that MongoDB 6.0 has been installed already.  
 First, install Node.js, see [here](https://github.com/nodesource/distributions).
@@ -69,7 +75,9 @@ Update system services.
 # systemctl restart open5gs-webui
 ```
 ---
-<h2 id="changelog">Changelog (summary)</h2>
+<a id="changelog"></a>
+
+## Changelog (summary)
 
 - [2023.09.02] Updated the Node.js installation procedure.
 - [2023.02.10] Initial release.
